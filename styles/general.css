@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// Netflix sans 폰트 적용
+@font-face {
+  src: url('../fonts/NetflixSansBlack.ttf');
+  font-family: 'Netflix Sans';
+}
+
+body {
+  font-family: Netflix Sans, Helvetica Neue, Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--primary);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --primary: #fff;
+  --secondary: rgba(109, 109, 110, 0.7);
+  --background: #141414;
+}

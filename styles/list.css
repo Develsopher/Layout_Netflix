@@ -1,0 +1,53 @@
+.list__section {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list__container {
+  margin: 2vw 0;
+}
+
+.list__title {
+  font-size: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.list__contents {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.list__contents li {
+  cursor: pointer;
+  width: 25%;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.list__contents li:hover img {
+  transform: scale(1.2);
+}
+
+.list__contents img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .list__contents li {
+    width: 12.5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .list__contents li {
+    width: 18%;
+  }
+}
